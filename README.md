@@ -1,2 +1,43 @@
 # zplugin-vim-syntax
-A Vim syntax definition for Zplugin commands in any ft=zsh file
+
+A Vim syntax definition for Zplugin commands in any file of type `zsh`.
+
+## Installation
+
+Load as a Vim plugin. E.g. when using vim-plug, add to `~/.vimrc`:
+
+```vim
+Plug 'zplugin/zplugin-vim-syntax'
+```
+
+and then issue the `:PlugInstall` command.
+
+## Examples
+
+The default theme:
+
+![plastic](https://raw.githubusercontent.com/zplugin/zplugin-vim-syntax/master/images/default.png)
+
+The theme `flrnprz/plastic.vim`:
+
+![plastic](https://raw.githubusercontent.com/zplugin/zplugin-vim-syntax/master/images/plastic.png)
+
+The theme `slate`:
+
+![plastic](https://raw.githubusercontent.com/zplugin/zplugin-vim-syntax/master/images/slate.png)
+
+The theme `murphy`:
+
+![plastic](https://raw.githubusercontent.com/zplugin/zplugin-vim-syntax/master/images/murphy.png)
+
+The theme `lucasprag/simpleblack`:
+
+![plastic](https://raw.githubusercontent.com/zplugin/zplugin-vim-syntax/master/images/simpleblack.png)
+
+## TODO
+
+1. Highlight user and plugin with different colors.
+2. Make the `wait`'s distinctness controlled.
+3. Make the syntax matching commands fully contained.
+4. Fix bugs.
+5. Other?
