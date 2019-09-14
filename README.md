@@ -12,6 +12,11 @@ Plug 'zplugin/zplugin-vim-syntax'
 
 and then issue the `:PlugInstall` command.
 
+### Manual Installation
+
+To install the syntax copy the file `syntax/after/zsh.vim` under the path
+`~/.vim/syntax/after`.
+
 ## Examples
 
 The default theme:
