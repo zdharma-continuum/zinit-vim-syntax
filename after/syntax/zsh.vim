@@ -25,19 +25,19 @@ syntax match ZpluginSnippetSubCommands /\s\<\%(snippet\)\>\s/ms=s+1,me=e-1
             \ contains=ZpluginSnippetShorthands1,ZpluginSnippetShorthands2
 
 " "user/plugin"
-syntax match ZpluginPlugin1 /\s["]\%([.a-zA-Z0-9_-]*\%(\/[.a-zA-Z0-9_-]\+\)\+\|[.a-zA-Z0-9_-]\+\)["]/ms=s+1,hs=s+2,he=e-1
+syntax match ZpluginPlugin1 /\s["]\%([!-_]*\%(\/[!-_]\+\)\+\|[!-_]\+\)["]/ms=s+1,hs=s+2,he=e-1
             \ contained
             \ nextgroup=ZpluginTrailingWhiteSpace
             \ contains=ZpluginTrailingWhiteSpace
 
 " 'user/plugin'
-syntax match ZpluginPlugin2 /\s[']\%([.a-zA-Z0-9_-]*\%(\/[.a-zA-Z0-9_-]\+\)\+\|[.a-zA-Z0-9_-]\+\)[']/ms=s+1,hs=s+2,he=e-1
+syntax match ZpluginPlugin2 /\s[']\%([!-_]*\%(\/[!-_]\+\)\+\|[!-_]\+\)[']/ms=s+1,hs=s+2,he=e-1
             \ contained
             \ nextgroup=ZpluginTrailingWhiteSpace
             \ contains=ZpluginTrailingWhiteSpace
 
 " user/plugin
-syntax match ZpluginPlugin3 /\s\%([.a-zA-Z0-9_-]*\%(\/[.a-zA-Z0-9_-]\+\)\+\|[.a-zA-Z0-9_-]\+\)/ms=s+1,me=e+2 
+syntax match ZpluginPlugin3 /\s\%([!-_]*\%(\/[!-_]\+\)\+\|[!-_]\+\)/ms=s+1,me=e+2 
             \ contained
             \ nextgroup=ZpluginTrailingWhiteSpace
             \ contains=ZpluginTrailingWhiteSpace
@@ -57,26 +57,26 @@ syntax match ZpluginSnippetShorthands2 /\s["]\%(\%(OMZ\|PZT\)\>::\|\)/hs=s+2,he=
             \ nextgroup=ZpluginSnippetUrl3,ZpluginSnippetUrl4
             \ contains=ZpluginSnippetUrl3,ZpluginSnippetUrl4
 
-syntax match ZpluginSnippetUrl3 /\<\%(http:\/\/\|https:\/\/\|ftp:\/\/\|\$HOME\|\/\)[.a-zA-Z0-9_-]\+\%(\/[.a-zA-Z0-9_-]\+\)*\/\?["]/he=e-1
+syntax match ZpluginSnippetUrl3 /\<\%(http:\/\/\|https:\/\/\|ftp:\/\/\|\$HOME\|\/\)[!-_]\+\%(\/[!-_]\+\)*\/\?["]/he=e-1
             \ contained
             \ nextgroup=ZpluginTrailingWhiteSpace
             \ contains=ZpluginTrailingWhiteSpace
 
 " TODO: Fix ZpluginTrailingWhiteSpace not matching
-syntax match ZpluginSnippetUrl4 /\%(\%(OMZ\|PZT\)::\)[.a-zA-Z0-9_-]\+\%(\/[.a-zA-Z0-9_-]\+\)*\/\?["]/hs=s+5,he=e-1
+syntax match ZpluginSnippetUrl4 /\%(\%(OMZ\|PZT\)::\)[!-_]\+\%(\/[!-_]\+\)*\/\?["]/hs=s+5,he=e-1
             \ contained
             \ nextgroup=ZpluginTrailingWhiteSpace
             \ contains=ZpluginTrailingWhiteSpace
 
 " http://… or https://… or ftp://… or $HOME/… or /…
 " TODO: Fix $HOME/… and /… not matching
-syntax match ZpluginSnippetUrl1 /\<\%(http:\/\/\|https:\/\/\|ftp:\/\/\|\$HOME\|\/\)[.a-zA-Z0-9_-]\+\%(\/[.a-zA-Z0-9_-]\+\)*\/\?/
+syntax match ZpluginSnippetUrl1 /\<\%(http:\/\/\|https:\/\/\|ftp:\/\/\|\$HOME\|\/\)[!-_]\+\%(\/[!-_]\+\)*\/\?/
             \ contained
             \ nextgroup=ZpluginTrailingWhiteSpace
             \ contains=ZpluginTrailingWhiteSpace
 
 " TODO: Fix ZpluginTrailingWhiteSpace not matching
-syntax match ZpluginSnippetUrl2 /\<\%(\%(OMZ\|PZT\)::\)[.a-zA-Z0-9_-]\+\%(\/[.a-zA-Z0-9_-]\+\)*\/\?/hs=s+5
+syntax match ZpluginSnippetUrl2 /\<\%(\%(OMZ\|PZT\)::\)[!-_]\+\%(\/[!-_]\+\)*\/\?/hs=s+5
             \ contained
             \ nextgroup=ZpluginTrailingWhiteSpace
             \ contains=ZpluginTrailingWhiteSpace
@@ -95,7 +95,7 @@ syntax match ZpluginIceModifiers  /\s\<\%(\!sh\|\!bash\|\!ksh\|\!csh\)\>[[:space
 syntax match ZpluginIceModifiers  /\s\<\%(blockf\|silent\|lucid\|trackbinds\|cloneonly\|nocd\|run-atpull\|nocompletions\|svn\|sh\|\!sh\|bash\|\!bash\|ksh\|\!ksh\|csh\|\!csh\|aliases\)\>[\n '"]/ms=s+1,me=e-1
             
 " Include also ices added by the existing annexes
-syntax match ZpluginIceModifiers  /\s\<\%(test\|zman\|submod\|dl\|patch\)\>[\n\s'"]/ms=s+1,me=e-1
+syntax match ZpluginIceModifiers  /\s\<\%(test\|zman\|submod\|dl\|patch\|fbin\|rbin\|gem\|node\)\>[\n\s'"]/ms=s+1,me=e-1
         
 " Additional Zsh and Zplugin functions
 syntax match ZshAndZpluginFunctions     /\<\%(compdef\|compinit\|zpcdreplay\|zpcdclear\|zpcompinit\|zpcompdef\)\>/
