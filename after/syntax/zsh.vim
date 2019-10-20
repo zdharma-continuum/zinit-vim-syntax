@@ -95,7 +95,7 @@ syntax match ZpluginIceModifiers  /\s\<\%(\!sh\|\!bash\|\!ksh\|\!csh\)\>[[:space
 syntax match ZpluginIceModifiers  /\s\<\%(blockf\|silent\|lucid\|trackbinds\|cloneonly\|nocd\|run-atpull\|nocompletions\|svn\|sh\|\!sh\|bash\|\!bash\|ksh\|\!ksh\|csh\|\!csh\|aliases\)\>[\n '"]/ms=s+1,me=e-1
             
 " Include also ices added by the existing annexes
-syntax match ZpluginIceModifiers  /\s\<\%(test\|zman\|submod\|dl\|patch\|fbin\|rbin\|gem\|node\)\>[\n\s'"]/ms=s+1,me=e-1
+syntax match ZpluginIceModifiers  /\s\<\%(test\|zman\|submod\|dl\|patch\|fbin\|sbin\|fsrc\|ferc\|fmod\|gem\|node\|rustup\|cargo\)\>[\n\s'"]/ms=s+1,me=e-1
         
 " Additional Zsh and Zplugin functions
 syntax match ZshAndZpluginFunctions     /\<\%(compdef\|compinit\|zpcdreplay\|zpcdclear\|zpcompinit\|zpcompdef\)\>/
