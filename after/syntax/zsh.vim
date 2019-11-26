@@ -86,17 +86,17 @@ syntax match ZpluginTrailingWhiteSpace /[[:space:]]\+$/ contained
 " TODO: differentiate the no-value ices
 " TODO: use contained
 syntax match ZpluginIceSubCommand /\sice\s/ms=s+1,me=e-1 nextgroup=ZpluginIceModifiers
-syntax match ZpluginIceModifiers  /\s\<\%(svn\|proto\|from\|teleid\|bindmap\|cloneopts\|id-as\|depth\|if\|wait\|load\)\>\([[:space:]'"]\|\>\)/ms=s+1,me=e-1
-syntax match ZpluginIceModifiers  /\s\<\%(unload\|blockf\|on-update-of\|subscribe\|pick\|bpick\|src\|as\|ver\|silent\)\>\([[:space:]'"]\|\>\)/ms=s+1,me=e-1
-syntax match ZpluginIceModifiers  /\s\<\%(lucid\|notify\|mv\|cp\|atinit\|atclone\|atload\|atpull\|nocd\|run-atpull\|has\)\>\([[:space:]'"]\|\>\)/ms=s+1,me=e-1
-syntax match ZpluginIceModifiers  /\s\<\%(cloneonly\|make\|service\|trackbinds\|multisrc\|compile\|nocompile\)\>\([[:space:]'"]\|\>\)/ms=s+1,me=e-1
-syntax match ZpluginIceModifiers  /\s\<\%(nocompletions\|reset-prompt\|wrap-track\|reset\|aliases\|sh\|bash\|ksh\|csh\)\>\([[:space:]'"]\|\>\)/ms=s+1,me=e-1
-syntax match ZpluginIceModifiers  /\s\<\%(\!sh\|\!bash\|\!ksh\|\!csh\)\>\([[:space:]'"]\|\>\)/ms=s+1,me=e-1
-syntax match ZpluginIceModifiers  /\s\<\%(blockf\|silent\|lucid\|trackbinds\|cloneonly\|nocd\|run-atpull\)\>\([[:space:]'"]\|\>\)/ms=s+1,me=e-1
-syntax match ZpluginIceModifiers  /\s\<\%(nocompletions\|svn\|sh\|\\!sh\|bash\|\\!bash\|ksh\|\\!ksh\|csh\|\\!csh\|aliases\|trigger-load\)\>\([[:space:]'"]\|\>\)/ms=s+1,me=e-1
+syntax match ZpluginIceModifiers  /\s\<\%(svn\|proto\|from\|teleid\|bindmap\|cloneopts\|id-as\|depth\|if\|wait\|load\)\>/ms=s+1
+syntax match ZpluginIceModifiers  /\s\<\%(unload\|blockf\|on-update-of\|subscribe\|pick\|bpick\|src\|as\|ver\|silent\)\>/ms=s+1
+syntax match ZpluginIceModifiers  /\s\<\%(lucid\|notify\|mv\|cp\|atinit\|atclone\|atload\|atpull\|nocd\|run-atpull\|has\)\>/ms=s+1
+syntax match ZpluginIceModifiers  /\s\<\%(cloneonly\|make\|service\|trackbinds\|multisrc\|compile\|nocompile\)\>/ms=s+1
+syntax match ZpluginIceModifiers  /\s\<\%(nocompletions\|reset-prompt\|wrap-track\|reset\|aliases\|sh\|bash\|ksh\|csh\)\>/ms=s+1
+syntax match ZpluginIceModifiers  /\s\<\%(\!sh\|\!bash\|\!ksh\|\!csh\)\>/ms=s+1
+syntax match ZpluginIceModifiers  /\s\<\%(blockf\|silent\|lucid\|trackbinds\|cloneonly\|nocd\|run-atpull\)\>/ms=s+1
+syntax match ZpluginIceModifiers  /\s\<\%(nocompletions\|svn\|sh\|\\!sh\|bash\|\\!bash\|ksh\|\\!ksh\|csh\|\\!csh\|aliases\|trigger-load\)\>/ms=s+1
             
 " Include also ices added by the existing annexes
-syntax match ZpluginIceModifiers  /\s\<\%(test\|zman\|submod\|dl\|patch\|fbin\|sbin\|fsrc\|ferc\|fmod\|gem\|node\|rustup\|cargo\)\>\([[:space:]'"]\|\>\)/ms=s+1,me=e-1
+syntax match ZpluginIceModifiers  /\s\<\%(test\|zman\|submod\|dl\|patch\|fbin\|sbin\|fsrc\|ferc\|fmod\|gem\|node\|rustup\|cargo\)\>/ms=s+1
         
 " Additional Zsh and Zplugin functions
 syntax match ZshAndZpluginFunctions     /\<\%(compdef\|compinit\|zpcdreplay\|zpcdclear\|zpcompinit\|zpcompdef\)\>/
