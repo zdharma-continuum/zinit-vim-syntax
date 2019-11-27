@@ -91,7 +91,7 @@ syntax match ZpluginIceModifiers  /\s\<\%(unload\|blockf\|on-update-of\|subscrib
 syntax match ZpluginIceModifiers  /\s\<\%(lucid\|notify\|mv\|cp\|atinit\|atclone\|atload\|atpull\|nocd\|run-atpull\|has\)\>/ms=s+1
 syntax match ZpluginIceModifiers  /\s\<\%(cloneonly\|make\|service\|trackbinds\|multisrc\|compile\|nocompile\)\>/ms=s+1
 syntax match ZpluginIceModifiers  /\s\<\%(nocompletions\|reset-prompt\|wrap-track\|reset\|aliases\|sh\|bash\|ksh\|csh\)\>/ms=s+1
-syntax match ZpluginIceModifiers  /\s\<\%(\!sh\|\!bash\|\!ksh\|\!csh\)\>/ms=s+1
+syntax match ZpluginIceModifiers  /\s\<\%(\\!sh\|!sh\|\\!bash\|!bash\|\g!ksh\|!ksh\|\\!csh\|!csh\)\>/ms=s+1
 syntax match ZpluginIceModifiers  /\s\<\%(blockf\|silent\|lucid\|trackbinds\|cloneonly\|nocd\|run-atpull\)\>/ms=s+1
 syntax match ZpluginIceModifiers  /\s\<\%(nocompletions\|svn\|sh\|\\!sh\|bash\|\\!bash\|ksh\|\\!ksh\|csh\|\\!csh\|aliases\|trigger-load\)\>/ms=s+1
             
