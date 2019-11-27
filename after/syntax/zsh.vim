@@ -93,7 +93,8 @@ syntax match ZpluginIceModifiers  /\s\<\%(cloneonly\|make\|service\|trackbinds\|
 syntax match ZpluginIceModifiers  /\s\<\%(nocompletions\|reset-prompt\|wrap-track\|reset\|aliases\|sh\|bash\|ksh\|csh\)\>/ms=s+1
 syntax match ZpluginIceModifiers  /\s\<\%(\\!sh\|!sh\|\\!bash\|!bash\|\\!ksh\|!ksh\|\\!csh\|!csh\)\>/ms=s+1
 syntax match ZpluginIceModifiers  /\s\<\%(blockf\|silent\|lucid\|trackbinds\|cloneonly\|nocd\|run-atpull\)\>/ms=s+1
-syntax match ZpluginIceModifiers  /\s\<\%(nocompletions\|svn\|sh\|\!sh\|bash\|\\!bash\|ksh\|\\!ksh\|csh\|\\!csh\|aliases\|trigger-load\)\>/ms=s+1
+syntax match ZpluginIceModifiers  /\s\<\%(\|sh\|\!sh\|bash\|\!bash\|ksh\|\!ksh\|csh\|\!csh\)\>/ms=s+1
+syntax match ZpluginIceModifiers  /\s\<\%(nocompletions\|svn\|aliases\|trigger-load\)\>/ms=s+1
 syntax match ZpluginIceModifiers  /\s\<\%(light-mode\|is-snippet\|countdown\|ps-on-unload\|ps-on-update\)\>/ms=s+1
             
 " Include also ices added by the existing annexes
