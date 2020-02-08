@@ -1,13 +1,13 @@
-# zplugin-vim-syntax
+# zinit-vim-syntax
 
-A Vim syntax definition for Zplugin commands in any file of type `zsh`.
+A Vim syntax definition for Zinit commands in any file of type `zsh`.
 
 ## Installation
 
 Load as a Vim plugin. E.g. when using vim-plug, add to `~/.vimrc`:
 
 ```vim
-Plug 'zplugin/zplugin-vim-syntax'
+Plug 'zinit-zsh/zinit-vim-syntax'
 ```
 
 and then issue the `:PlugInstall` command.
@@ -21,23 +21,23 @@ To install the syntax copy the file `syntax/after/zsh.vim` under the path
 
 The default theme:
 
-![plastic](https://raw.githubusercontent.com/zplugin/zplugin-vim-syntax/master/images/default.png)
+![plastic](https://raw.githubusercontent.com/zinit-zsh/zinit-vim-syntax/master/images/default.png)
 
 The theme `flrnprz/plastic.vim`:
 
-![plastic](https://raw.githubusercontent.com/zplugin/zplugin-vim-syntax/master/images/plastic.png)
+![plastic](https://raw.githubusercontent.com/zinit-zsh/zinit-vim-syntax/master/images/plastic.png)
 
 The theme `slate`:
 
-![plastic](https://raw.githubusercontent.com/zplugin/zplugin-vim-syntax/master/images/slate.png)
+![plastic](https://raw.githubusercontent.com/zinit-zsh/zinit-vim-syntax/master/images/slate.png)
 
 The theme `murphy`:
 
-![plastic](https://raw.githubusercontent.com/zplugin/zplugin-vim-syntax/master/images/murphy.png)
+![plastic](https://raw.githubusercontent.com/zinit-zsh/zinit-vim-syntax/master/images/murphy.png)
 
 The theme `lucasprag/simpleblack`:
 
-![plastic](https://raw.githubusercontent.com/zplugin/zplugin-vim-syntax/master/images/simpleblack.png)
+![plastic](https://raw.githubusercontent.com/zinit-zsh/zinit-vim-syntax/master/images/simpleblack.png)
 
 ## TODO
 
