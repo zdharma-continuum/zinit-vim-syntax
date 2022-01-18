@@ -159,7 +159,7 @@ hi def link ZinitIceCommand          Title
 hi def link ZinitPluginCommand       Title
 hi def link ZinitSnippetCommand      Title
 hi def link ZinitForCommand          zshRepeat
-" hi def link ZinitContinue            zshOperator
+hi def link ZinitContinue            Normal
 hi def link ZinitPlugin              Macro
 hi def link ZinitSnippet             Macro
 hi def link ZinitIce                 Type
