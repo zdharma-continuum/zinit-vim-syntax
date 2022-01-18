@@ -21,28 +21,14 @@ To install the syntax copy the file `syntax/after/zsh.vim` under the path
 
 The default theme:
 
-![plastic](./images/default.png)
+![neovim-default](./images/neovim-default.png)
 
-The theme `flrnprz/plastic.vim`:
+The theme: `eddyekofo94/gruvbox-flat.nvim`:
 
-![plastic](./images/plastic.png)
-
-The theme `slate`:
-
-![plastic](./images/slate.png)
-
-The theme `murphy`:
-
-![plastic](./images/murphy.png)
-
-The theme `lucasprag/simpleblack`:
-
-![plastic](./images/simpleblack.png)
+![neovim-gruvbox-flat](./images/neovim-gruvbox-flat.png)
 
 ## TODO
 
 1. Highlight user and plugin with different colors.
-2. Make the `wait`'s distinctness controlled.
-3. Make the syntax matching commands fully contained.
-4. Fix bugs.
-5. Other?
+2. Fix bugs.
+3. Other?
