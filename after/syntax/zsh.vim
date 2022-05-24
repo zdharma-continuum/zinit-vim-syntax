@@ -78,7 +78,7 @@ syn region ZinitIceWithParam matchgroup=ZinitIce start=+\s\%(param\)"+ skip=+\\"
             \ contains=ZinitIceDoubleQuoteParam
 
 " added by the existing annexes
-syn region ZinitIceWithParam matchgroup=ZinitIce start=+\s\%(fbin\|sbin\|gem\|node\|pip\|fmod\|fsrc\|ferc\)"+ skip=+\\"+ end=+"+ skipwhite contained
+syn region ZinitIceWithParam matchgroup=ZinitIce start=+\s\%(fbin\|lbin\|sbin\|gem\|node\|pip\|fmod\|fsrc\|ferc\)"+ skip=+\\"+ end=+"+ skipwhite contained
             \ nextgroup=@ZinitLine,ZinitContinue
             \ contains=ZinitIceDoubleQuoteParam
 syn region ZinitIceWithParam matchgroup=ZinitIce start=+\s\%(dl\|patch\|submods\|cargo\|dlink\|dlink0\)"+ skip=+\\"+ end=+"+ skipwhite contained
@@ -114,7 +114,7 @@ syn region ZinitIceWithParam matchgroup=ZinitIce start=+\s\%(param\)'+ skip=+\\'
             \ contains=ZinitIceSingleQuoteParam
 
 " added by the existing annexes
-syn region ZinitIceWithParam matchgroup=ZinitIce start=+\s\%(fbin\|sbin\|gem\|node\|pip\|fmod\|fsrc\|ferc\)'+ skip=+\\'+ end=+'+ skipwhite contained
+syn region ZinitIceWithParam matchgroup=ZinitIce start=+\s\%(fbin\|lbin\|sbin\|gem\|node\|pip\|fmod\|fsrc\|ferc\)'+ skip=+\\'+ end=+'+ skipwhite contained
             \ nextgroup=@ZinitLine,ZinitContinue
             \ contains=ZinitIceSingleQuoteParam
 syn region ZinitIceWithParam matchgroup=ZinitIce start=+\s\%(dl\|patch\|submods\|cargo\|dlink\|dlink0\)'+ skip=+\\'+ end=+'+ skipwhite contained
