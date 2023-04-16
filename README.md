@@ -14,8 +14,7 @@ and then issue the `:PlugInstall` command.
 
 ### Manual Installation
 
-To install the syntax copy the file `syntax/after/zsh.vim` under the path
-`~/.vim/syntax/after`.
+To install the syntax copy the file `syntax/after/zsh.vim` under the path `~/.vim/syntax/after`.
 
 ## Examples
 
@@ -30,5 +29,5 @@ The theme: `eddyekofo94/gruvbox-flat.nvim`:
 ## TODO
 
 1. Highlight user and plugin with different colors.
-2. Fix bugs.
-3. Other?
+1. Fix bugs.
+1. Other?
