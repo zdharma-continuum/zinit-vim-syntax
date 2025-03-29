@@ -78,6 +78,9 @@ syn region ZinitIceWithParam matchgroup=ZinitIce start=+\s\%(param\)"+ skip=+\\"
             \ contains=ZinitIceDoubleQuoteParam
 
 " added by the existing annexes
+syn region ZinitIceWithParam matchgroup=ZinitIce start=+\s\%(lman\|eval\)"+ skip=+\\"+ end=+"+ skipwhite contained
+            \ nextgroup=@ZinitLine,ZinitContinue
+            \ contains=ZinitIceDoubleQuoteParam
 syn region ZinitIceWithParam matchgroup=ZinitIce start=+\s\%(fbin\|lbin\|sbin\|gem\|node\|pip\|fmod\|fsrc\|ferc\)"+ skip=+\\"+ end=+"+ skipwhite contained
             \ nextgroup=@ZinitLine,ZinitContinue
             \ contains=ZinitIceDoubleQuoteParam
@@ -114,6 +117,9 @@ syn region ZinitIceWithParam matchgroup=ZinitIce start=+\s\%(param\)'+ skip=+\\'
             \ contains=ZinitIceSingleQuoteParam
 
 " added by the existing annexes
+syn region ZinitIceWithParam matchgroup=ZinitIce start=+\s\%(lman\|eval\)'+ skip=+\\'+ end=+'+ skipwhite contained
+            \ nextgroup=@ZinitLine,ZinitContinue
+            \ contains=ZinitIceSingleQuoteParam
 syn region ZinitIceWithParam matchgroup=ZinitIce start=+\s\%(fbin\|lbin\|sbin\|gem\|node\|pip\|fmod\|fsrc\|ferc\)'+ skip=+\\'+ end=+'+ skipwhite contained
             \ nextgroup=@ZinitLine,ZinitContinue
             \ contains=ZinitIceSingleQuoteParam
@@ -139,6 +145,10 @@ syn match ZinitIce '\s!\?\%(sh\|bash\|ksh\|csh\)\>'ms=s+1 skipwhite contained
 syn match ZinitIce '\s\%(id-as\|nocompile\|reset-prompt\|trackbinds\|aliases\|light-mode\)\>'ms=s+1 skipwhite contained
             \ nextgroup=@ZinitLine,ZinitContinue
 syn match ZinitIce '\s\%(is-snippet\)\>'ms=s+1 skipwhite contained
+            \ nextgroup=@ZinitLine,ZinitContinue
+syn match ZinitIce '\s\%(extract\)\>'ms=s+1 skipwhite contained
+            \ nextgroup=@ZinitLine,ZinitContinue
+syn match ZinitIce '\s\%(lman\|eval\)'ms=s+1 skipwhite contained
             \ nextgroup=@ZinitLine,ZinitContinue
 
 " ices that doens't take a param, from zinit packages
